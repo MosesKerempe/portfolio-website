@@ -7,6 +7,7 @@ import About from './pages/About';
 import Timeline from './components/Timeline';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects'; // Import the Projects page
+import Contact from './pages/Contact'; // Import the Contact page
 
 const App: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ const App: React.FC = () => {
             <Route path="/timeline" component={Timeline} />
             <Route path="/skills" component={Skills} />
             <Route path="/projects" component={Projects} /> {/* Add Projects route */}
+            <Route path="/contact" component={Contact} /> {/* Add Contact route */}
           </Switch>
         </main>
         <Footer />

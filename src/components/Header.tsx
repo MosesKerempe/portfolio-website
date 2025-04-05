@@ -38,46 +38,36 @@ const Header: React.FC = () => {
           My Portfolio
         </Link>
 
-        {/* Navigation Links */}
+        {/* Navigation Links (Desktop) */}
         <ul className="hidden lg:flex lg:space-x-4 lg:items-center">
           <li>
-            <Link
-              to="/"
-              className="hover:text-gray-400"
-            >
+            <Link to="/" className="hover:text-gray-400">
               Home
             </Link>
           </li>
           <li>
-            <Link
-              to="/about"
-              className="hover:text-gray-400"
-            >
+            <Link to="/about" className="hover:text-gray-400">
               About
             </Link>
           </li>
           <li>
-            <Link
-              to="/timeline"
-              className="hover:text-gray-400"
-            >
+            <Link to="/timeline" className="hover:text-gray-400">
               Timeline
             </Link>
           </li>
           <li>
-            <Link
-              to="/skills"
-              className="hover:text-gray-400"
-            >
+            <Link to="/skills" className="hover:text-gray-400">
               Skills
             </Link>
           </li>
           <li>
-            <Link
-              to="/projects"
-              className="hover:text-gray-400"
-            >
+            <Link to="/projects" className="hover:text-gray-400">
               Projects
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" className="hover:text-gray-400">
+              Contact
             </Link>
           </li>
         </ul>
@@ -160,6 +150,15 @@ const Header: React.FC = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               Projects
+            </Link>
+          </li>
+          <li className="border-b border-gray-700">
+            <Link
+              to="/contact"
+              className="block px-4 py-2 hover:text-gray-400"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Contact
             </Link>
           </li>
         </ul>
