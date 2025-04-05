@@ -38,6 +38,58 @@ const Header: React.FC = () => {
           My Portfolio
         </Link>
 
+        {/* Navigation Links */}
+        <ul className="hidden lg:flex lg:space-x-4 lg:items-center">
+          <li>
+            <Link
+              to="/"
+              className="hover:text-gray-400"
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/about"
+              className="hover:text-gray-400"
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/timeline"
+              className="hover:text-gray-400"
+            >
+              Timeline
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/skills"
+              className="hover:text-gray-400"
+            >
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/projects"
+              className="hover:text-gray-400"
+            >
+              Projects
+            </Link>
+          </li>
+        </ul>
+
+        {/* Dark Mode Toggle */}
+        <button
+          onClick={toggleTheme}
+          className="bg-gray-700 dark:bg-gray-600 text-white p-2 rounded-full hover:bg-gray-600 dark:hover:bg-gray-500"
+        >
+          {isDarkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+        </button>
+
         {/* Hamburger Menu Button (Visible on Mobile) */}
         <button
           onClick={toggleMenu}
@@ -59,66 +111,58 @@ const Header: React.FC = () => {
           </svg>
         </button>
 
-        {/* Navigation Links */}
+        {/* Mobile Navigation Links */}
         <ul
           className={`${
             isMenuOpen ? 'block' : 'hidden'
-          } lg:flex lg:space-x-4 lg:items-center absolute lg:static top-16 left-0 w-full lg:w-auto bg-gray-800 lg:bg-transparent z-10`}
+          } lg:hidden absolute top-16 left-0 w-full bg-gray-800 z-10`}
         >
-          <li className="border-b border-gray-700 lg:border-none">
+          <li className="border-b border-gray-700">
             <Link
               to="/"
-              className="block px-4 py-2 lg:p-0 hover:text-gray-400"
+              className="block px-4 py-2 hover:text-gray-400"
               onClick={() => setIsMenuOpen(false)}
             >
               Home
             </Link>
           </li>
-          <li className="border-b border-gray-700 lg:border-none">
+          <li className="border-b border-gray-700">
             <Link
               to="/about"
-              className="block px-4 py-2 lg:p-0 hover:text-gray-400"
+              className="block px-4 py-2 hover:text-gray-400"
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </Link>
           </li>
-          <li className="border-b border-gray-700 lg:border-none">
+          <li className="border-b border-gray-700">
             <Link
               to="/timeline"
-              className="block px-4 py-2 lg:p-0 hover:text-gray-400"
+              className="block px-4 py-2 hover:text-gray-400"
               onClick={() => setIsMenuOpen(false)}
             >
               Timeline
             </Link>
           </li>
-          <li className="border-b border-gray-700 lg:border-none">
+          <li className="border-b border-gray-700">
             <Link
               to="/skills"
-              className="block px-4 py-2 lg:p-0 hover:text-gray-400"
+              className="block px-4 py-2 hover:text-gray-400"
               onClick={() => setIsMenuOpen(false)}
             >
               Skills
             </Link>
           </li>
-          <li className="border-b border-gray-700 lg:border-none">
+          <li className="border-b border-gray-700">
             <Link
               to="/projects"
-              className="block px-4 py-2 lg:p-0 hover:text-gray-400"
+              className="block px-4 py-2 hover:text-gray-400"
               onClick={() => setIsMenuOpen(false)}
             >
               Projects
             </Link>
           </li>
         </ul>
-
-        {/* Dark Mode Toggle */}
-        <button
-          onClick={toggleTheme}
-          className="bg-gray-700 dark:bg-gray-600 text-white p-2 rounded-full hover:bg-gray-600 dark:hover:bg-gray-500"
-        >
-          {isDarkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-        </button>
       </nav>
     </header>
   );
