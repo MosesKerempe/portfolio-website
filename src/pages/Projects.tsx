@@ -5,8 +5,8 @@ const Projects: React.FC = () => {
     {
       title: 'Portfolio Website',
       description: 'A personal portfolio website showcasing my skills, projects, and experience. Built with React, TypeScript, and Tailwind CSS to create a responsive and visually appealing design.',
-      liveDemo: 'https://your-portfolio-live-demo.com', // Replace with your live demo link
-      sourceCode: 'https://github.com/yourusername/portfolio-website', // Replace with your GitHub repo link
+      liveDemo: 'https://portfolio-website-sigma-eight-41.vercel.app/', // Replace with your live demo link
+      sourceCode: 'https://github.com/MosesKerempe/portfolio-website', // Replace with your GitHub repo link
     },
     {
       title: 'Swahilipothub Website',
