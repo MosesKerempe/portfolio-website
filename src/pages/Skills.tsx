@@ -7,8 +7,8 @@ const Skills: React.FC = () => {
       description: 'Proficient in building dynamic and scalable web applications using JavaScript and TypeScript.',
     },
     {
-      name: 'React / Redux',
-      description: 'Experienced in creating interactive user interfaces and managing state with React and Redux.',
+      name: 'React',
+      description: 'Experienced in creating interactive user interfaces and managing state with React .',
     },
     {
       name: 'Tailwind CSS',
