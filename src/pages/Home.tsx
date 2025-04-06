@@ -1,5 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import About from './About';
+import Timeline from '../components/Timeline';
+import Skills from './Skills';
+import Projects from './Projects';
+import Contact from './Contact';
 
 const Home: React.FC = () => {
   return (
@@ -45,6 +50,31 @@ const Home: React.FC = () => {
         >
           Projects
         </Link>
+      </div>
+
+      {/* About Section */}
+      <div className="mt-16">
+        <About />
+      </div>
+
+      {/* Timeline Section */}
+      <div className="mt-16">
+        <Timeline />
+      </div>
+
+      {/* Skills Section */}
+      <div className="mt-16">
+        <Skills />
+      </div>
+
+      {/* Projects Section */}
+      <div className="mt-16">
+        <Projects />
+      </div>
+
+      {/* Contact Section */}
+      <div className="mt-16">
+        <Contact />
       </div>
     </div>
   );
